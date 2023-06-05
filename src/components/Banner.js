@@ -8,9 +8,9 @@ export const Banner = () => {
   const toRotate = [ " - Full stack Developer"]
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta]= useState(200 - Math.random() * 100);
+  const [delta, setDelta]= useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const period = 100;
+  const period = 1000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -23,7 +23,7 @@ export const Banner = () => {
     const tick = () => {
       let i = loopNum % toRotate.length;
       let fullText = toRotate[i];
-      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 2);
 
       setText(updatedText);
 
