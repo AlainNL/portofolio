@@ -1,9 +1,11 @@
 import { Container, Row, Col, TabContainer } from "react-bootstrap";
 import { Nav, Tab } from "react-bootstrap";
 import { Card } from "./Card";
-import projImg1 from "../assets/project-img1.png";
-import projImg2 from "../assets/project-img2.png";
-import projImg3 from "../assets/project-img3.png";
+import Lifeaz from "../assets/Lifeaz.png";
+import Allomovies from "../assets/Allomovies.png";
+import Shiny from "../assets/Shiny.png";
+import lmj from '../assets/lmj.png';
+
 import colorSharp2 from "../assets/color-sharp2.png";
 
 
@@ -11,20 +13,28 @@ export const Projects = () => {
   const projects = [
     {
       title: "Lifeaz",
-      description: "Development Home",
-      imgUrl: projImg1,
+      description: "Lifeaz's very first product is a connected defibrillator designed primarily for the home, but also for businesses.",
+      imgUrl: Lifeaz,
     },
     {
-      title: "Lifeaz",
-      description: "Development Home",
-      imgUrl: projImg2,
+      title: "AlloMovies",
+      description: "The Movie Database",
+      imgUrl: Allomovies,
     },
     {
-      title: "Lifeaz",
-      description: "Development Home",
-      imgUrl: projImg3,
+      title: "Shine Agency",
+      description: "Freelance website",
+      imgUrl: Shiny,
     },
   ];
+
+  const projectsTab2 = [
+    {
+      title: "La maison jungle",
+      description: "Buy your plants on La Maison Jungle website",
+      imgUrl: lmj,
+    },
+  ]
 
   return (
     <section className="project" id="projects">
@@ -39,9 +49,6 @@ export const Projects = () => {
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="second">Tab Two</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Tab three</Nav.Link>
                 </Nav.Item>
               </Nav>
             <Tab.Content>
@@ -59,10 +66,22 @@ export const Projects = () => {
                   }
                 </Row>
               </Tab.Pane>
-              <Tab.Pane eventKey="second">Lorem Dipseum</Tab.Pane>
-              <Tab.Pane eventKey="third">Lorem Dipseum</Tab.Pane>
+              <Tab.Pane eventKey="second">
+                <Row>
+                  {
+                    projectsTab2.map((project, index) => {
+                      return (
+                        <Card
+                          key={index}
+                          {...project}
+                        />
+                      )
+                    })
+                  }
+                  </Row>
+              </Tab.Pane>
             </Tab.Content>
-            </TabContainer>
+          </TabContainer>
           </Col>
         </Row>
       </Container>
