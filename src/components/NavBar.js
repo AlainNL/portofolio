@@ -3,9 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useEffect, useState } from 'react';
 import navIcon1 from '../assets/nav-icon1.svg';
-import navIcon2 from '../assets/nav-icon2.svg';
-import navIcon3 from '../assets/nav-icon3.svg';
-import logo from '../assets/logo.svg';
+import githubmarkwhite from '../assets/github-mark-white.svg';
+import icon from "../assets/icon.png";
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -36,7 +35,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <img src={icon} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -49,9 +48,8 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/alainnl/"><img src={navIcon1} alt="linkedin" /></a>
+                <a href="https://github.com/AlainNL"><img src={githubmarkwhite} alt="github" /></a>
               </div>
             </span>
           </Navbar.Collapse>

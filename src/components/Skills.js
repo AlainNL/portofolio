@@ -2,8 +2,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Container, Row, Col } from "react-bootstrap";
 import Angular from '../assets/angular.svg';
-import icon from '../assets/icon.svg';
 import JSlogo from '../assets/JSlogo.svg';
+import iconreact from "../assets/iconreact.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -35,19 +35,18 @@ export const Skills = () => {
                 <h2>
                   Skills
                 </h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <Carousel responsive={responsive} infinite={true} className="skill-slider">
                     <div className="item">
                       <img src={JSlogo} alt="JavaScript logo"/>
-                      <h5> Web Development</h5>
+                      <h5>JavaScript</h5>
                     </div>
                     <div className="item">
                       <img src={Angular} alt="Angular logo"/>
-                      <h5> Angular</h5>
+                      <h5>Angular</h5>
                     </div>
                     <div className="item">
-                      <img src={icon} alt="React logo"/>
-                      <h5> React JS</h5>
+                      <img src={iconreact} alt="React logo"/>
+                      <h5>React JS</h5>
                     </div>
                 </Carousel>
             </div>
