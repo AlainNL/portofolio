@@ -13,7 +13,7 @@ export const Projects = () => {
   const projects = [
     {
       title: "Lifeaz",
-      description: "Lifeaz's very first product is a connected defibrillator designed primarily for the home, but also for businesses.",
+      description: "Lifeaz webiste - The 1st life-saving defibrillator made for the home.",
       imgUrl: Lifeaz,
     },
     {
