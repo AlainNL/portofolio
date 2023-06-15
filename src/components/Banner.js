@@ -33,7 +33,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
               <h1>{`Hi ! I'm Alan`} <span className="wrap" ref={textRef}></span></h1>
-            <p>After more than 5 years' experience in operations and communications, both in a start-up and in a large group, I decided to move into the Web Developer profession.
+            <p>After more than 5 years' experience in operations and communications, both in a start-up and in a major group, I decided to move into the Web Developer profession.
 Passionate about tech, I design web projects independently. I love experimenting, discovering and learning new technologies.</p>
           </Col>
           <Col xs={12} md={6} xl={5}>
