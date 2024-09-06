@@ -5,12 +5,18 @@ import Lifeaz from "../assets/Lifeaz.png";
 import Allomovies from "../assets/Allomovies.png";
 import Shiny from "../assets/Shiny.png";
 import lmj from '../assets/lmj.png';
+import linkxo from "../assets/linkxo.png";
 
 import colorSharp2 from "../assets/color-sharp2.png";
 
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "Link XO",
+      description: "Social network",
+      imgUrl: linkxo,
+    },
     {
       title: "Lifeaz",
       description: "Lifeaz webiste - The 1st life-saving defibrillator made for the home.",
@@ -21,11 +27,6 @@ export const Projects = () => {
       description: "The Movie Database",
       imgUrl: Allomovies,
     },
-    {
-      title: "Shine Agency",
-      description: "Freelance website",
-      imgUrl: Shiny,
-    },
   ];
 
   const projectsTab2 = [
@@ -33,6 +34,11 @@ export const Projects = () => {
       title: "La maison jungle",
       description: "Buy your plants on La Maison Jungle website",
       imgUrl: lmj,
+    },
+    {
+      title: "Shine Agency",
+      description: "Freelance website",
+      imgUrl: Shiny,
     },
   ]
 
